@@ -42,30 +42,6 @@ $(function(){
    
 })
 
-// 点击”历史“按钮
-$(".hty_btn").click(function(){
-    $(".table_time").show()
-    $(".table_no").hide()
-    $(".app_choice_btn").hide()
-    // 历史中 --->进行判断展示通过或者不通过,1为通过，2为不通过
-    if(app_status==1){
-        $(".hty_ok").show()
-    }
-    if(app_status==2){
-        $(".hty_no").show()
-        $(".no_result textarea").val($("#suggest").val() )
-
-    }
-})
-
-// 点击”审批“按钮
-$(".applab_btn").click(function(){
-    $(".app_choice_btn").show()
-    $(".table_no").show()
-    $(".hty_ok").hide()
-    $(".hty_no").hide()
-    $(".table_time").hide()
-})
-
+ 
 
 })
