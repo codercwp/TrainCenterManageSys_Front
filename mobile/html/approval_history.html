@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no”>
-    <title>等待审批</title>
+    <title>审批历史页面</title>
     
     <link rel="stylesheet" href="../layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../css/base_x.css" media="all">
@@ -52,23 +52,26 @@
                 </thead>
                 <tbody >
                   <tr>
-                    <td>101010</td>
+                    <td>101010222</td>
                     <td>实验室仪器设备借用</td>
                     <td>汤海</td>
-                    <td class="app_status">通过</td>
+                    <td class="app_status"><a class="ok_status"  href="Hty_labInstr.html?status=0">通过</a></td>
                   </tr>
+                  
                   <tr>
                     <td>101010</td>
                     <td>实验室借用</td>
                     <td>汤海</td>
-                    <td class="app_status">不通过</td>
+                    <td class="app_status"><a  class="no_status"href="Hty_labLoan.html?status=1">不通过</a></td>
                   </tr>
+                
                   <tr>
                     <td>101010</td>
                     <td>开放实验室借用</td>
                     <td>汤海</td>
-                    <td class="app_status">不通过</td>
+                    <td class="app_status"><a class="ok_status" href="Hty_labOpen.html?status=0">通过</a></td>
                   </tr>
+                 </a> 
                   <tr>
                     <td>101010</td>
                     <td>实验室仪器设备借用</td>
@@ -110,4 +113,6 @@
         </form>
     </div>
 </body>
+<script type="text/javascript" src="../js/jquery-1.12.3.js"></script>
+<script type="text/javascript" src="../js/hty_labInstr.js"></script>
 </html>

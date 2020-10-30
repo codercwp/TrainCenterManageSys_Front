@@ -202,8 +202,11 @@ body {
   border-radius: 0.41666667rem;
   color: #ffffff;
 }
-.app_form .app_status {
+.app_form .app_status .ok_status {
   color: #569FDC;
+}
+.app_form .app_status .no_status {
+  color: #F73232;
 }
 .change_btn_2 {
   background: #ffffff;
