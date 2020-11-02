@@ -25,3 +25,4 @@ layui.use('laypage', function() {
         count: 50 //数据总数，从服务端得到
     });
 });
+
