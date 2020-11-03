@@ -26,7 +26,8 @@ function category(){
                 $('#form').empty();
                 $('#form').append(Str);
             }else{
-                if(data.data[i].type_id == "实验室借用申请表单"){
+                for(var i = 0;i<data.data.length;i++){
+                 if(data.data[i].type_id == "实验室借用申请表单"){
                     var url = "Form_view_lab.html?form_id="+data.data[i].form_id;
                 }else if(data.data[i].type_id == "期末实验教学检查记录表"){
                     var url ="Form_view_final.html?form_id="+data.data[i].form_id;
@@ -37,7 +38,6 @@ function category(){
                 }else if(data.data[i].type_id == "开放实验室使用申请单"){
                     var url ="Form_view_open.html?form_id="+data.data[i].form_id;
                 }
-                for(var i = 0;i<data.data.length;i++){
                     if(data.data[i].form_status == "审批中"){
                         var color = "nopass";
                     }else if(data.data[i].form_status == "已通过"){
